@@ -17,7 +17,7 @@ It is easy to use our `appdev` Docker image to run the dev environment. You can 
 
 ```
 $ docker pull wasmedge/appdev_x86_64:0.8.2
-$ docker run -p 3000:3000 --rm -it -v $(pwd):/app wasmedge/appdev_x86_64
+$ docker run -p 3000:3000 --rm -it -v $(pwd):/app wasmedge/appdev_x86_64:0.8.2
 (docker) #
 ```
 

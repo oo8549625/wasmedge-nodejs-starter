@@ -6,7 +6,7 @@ const hostname = '0.0.0.0';
 const port = 3000;
 
 const server = http.createServer((req, res) => {
-  const queryObject = url.parse(req.url,true).query;
+  const queryObject = url.parse(req.url, true).query;
   if (!queryObject['name']) {
     res.end(`Please use command curl http://${hostname}:${port}/?name=MyName \n`);
   } else {
